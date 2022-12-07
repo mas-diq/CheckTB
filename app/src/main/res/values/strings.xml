@@ -2,4 +2,8 @@
     <string name="app_name">diagnoseTuberculosis</string>
     <string name="tidak">Tidak</string>
     <string name="ya">Ya</string>
+    <string name="bagian_1">Bagian 1</string>
+    <string name="selanjutnya">Selanjutnya</string>
+    <string name="bagian_2">Bagian 2</string>
+    <string name="bagian_3">Bagian 3</string>
 </resources>
