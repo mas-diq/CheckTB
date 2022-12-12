@@ -1,10 +1,10 @@
-package com.example.diagnosetuberculosis.View.Results
+package com.example.diagnoseTuberkulosis.View.Results
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.diagnosetuberculosis.databinding.ActivityResultTwoBinding
+import com.example.diagnoseTuberkulosis.databinding.ActivityResultTwoBinding
 
 class ResultTwoActivity : AppCompatActivity() {
 
@@ -31,20 +31,20 @@ class ResultTwoActivity : AppCompatActivity() {
             if (tbParu != null && tbKelenjar != null && tbPayudara != null && tbTulang != null && tbOtak != null) {
                 if (tbParu > tbKelenjar && tbParu > tbPayudara && tbParu > tbTulang && tbParu > tbOtak) {
                     binding.tvPersentages.text = "$tbParu%"
-                    binding.tvValue.text = "Tuberculosis Paru-Paru"
+                    binding.tvValue.text = "Tuberkulosis Paru-Paru"
                 } else if (tbKelenjar > tbPayudara && tbKelenjar > tbTulang && tbKelenjar > tbOtak) {
                     binding.tvPersentages.text = "$tbKelenjar%"
-                    binding.tvValue.text = "Tuberculosis Kelenjar Getah Bening"
+                    binding.tvValue.text = "Tuberkulosis Kelenjar Getah Bening"
                     binding.tvValue.setLines(2)
                 } else if (tbPayudara > tbTulang && tbPayudara > tbOtak) {
                     binding.tvPersentages.text = "$tbPayudara%"
-                    binding.tvValue.text = "Tuberculosis Payudara"
+                    binding.tvValue.text = "Tuberkulosis Payudara"
                 } else if (tbTulang > tbOtak) {
                     binding.tvPersentages.text = "$tbTulang%"
-                    binding.tvValue.text = "Tuberculosis Tulang Belakang"
+                    binding.tvValue.text = "Tuberkulosis Tulang Belakang"
                 } else {
                     binding.tvPersentages.text = "$tbOtak%"
-                    binding.tvValue.text = "Tuberculosis Otak"
+                    binding.tvValue.text = "Tuberkulosis Otak"
                 }
 
             } else {

@@ -159,7 +159,7 @@ class PartThreeActivity : AppCompatActivity() {
             question23.apply {
                 textNomor.text = "Pertanyaan 23"
                 textPertanyaan.text = "Timbulnya benjolan di bagian punggung / tulang belakang."
-                textPertanyaan.setLines(3)
+                textPertanyaan.setLines(2)
             }
             question24.apply {
                 textNomor.text = "Pertanyaan 24"
@@ -172,7 +172,6 @@ class PartThreeActivity : AppCompatActivity() {
             question26.apply {
                 textNomor.text = "Pertanyaan 26"
                 textPertanyaan.text = "Timbulnya benjolan di payudara."
-                textPertanyaan.setLines(2)
             }
             question27.apply {
                 textNomor.text = "Pertanyaan 27"
@@ -184,12 +183,12 @@ class PartThreeActivity : AppCompatActivity() {
             }
             question29.apply {
                 textNomor.text = "Pertanyaan 29"
-                textPertanyaan.text = "Kejang."
+                textPertanyaan.text = "Kejang-kejang."
             }
             question30.apply {
                 textNomor.text = "Pertanyaan 30"
                 textPertanyaan.text = "Tangan dan kaki sulit digerakkan."
-                textPertanyaan.setLines(2)
+                textPertanyaan.setLines(1)
             }
             question31.apply {
                 textNomor.text = "Pertanyaan 31"

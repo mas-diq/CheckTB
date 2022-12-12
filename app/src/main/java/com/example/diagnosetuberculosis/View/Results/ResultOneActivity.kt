@@ -92,7 +92,7 @@ class ResultOneActivity : AppCompatActivity() {
         tbTulang: Double,
         tbOtak: Double
     ) {
-        binding.btnSelanjutnya.button.setOnClickListener(){
+        binding.btnSelanjutnya.button.setOnClickListener() {
             btnNext(tbParu, tbKelenjar, tbPayudara, tbTulang, tbOtak)
         }
         binding.apply {
@@ -104,10 +104,9 @@ class ResultOneActivity : AppCompatActivity() {
                 textPertanyaan.text =
                     """
                         Kelenjar
-                        Getah
-                        Bening
+                        Getah Bening
                     """.trimIndent()
-                textPertanyaan.setLines(3)
+                textPertanyaan.setLines(2)
             }
             answer3.apply {
                 textPersentase.text = "$tbPayudara%"
