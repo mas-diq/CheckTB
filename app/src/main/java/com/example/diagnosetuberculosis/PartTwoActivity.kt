@@ -3,6 +3,7 @@ package com.example.diagnosetuberculosis
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.diagnosetuberculosis.databinding.ActivityPartTwoBinding
 
 class PartTwoActivity : AppCompatActivity() {
@@ -14,13 +15,45 @@ class PartTwoActivity : AppCompatActivity() {
         binding = ActivityPartTwoBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        btnNext()
+        val bundleData = intent.extras
         changeContent()
+        btnNext(bundleData)
     }
 
-    private fun btnNext() {
-        binding.buttonNext.setOnClickListener {
+    private fun btnNext(bundleData: Bundle?) {
+        binding.buttonNext.button.setOnClickListener() {
+            val question_11 = if (binding.question11.Ya.isChecked) "Ya" else "Tidak"
+            val question_12 = if (binding.question12.Ya.isChecked) "Ya" else "Tidak"
+            val question_13 = if (binding.question13.Ya.isChecked) "Ya" else "Tidak"
+            val question_14 = if (binding.question14.Ya.isChecked) "Ya" else "Tidak"
+            val question_15 = if (binding.question15.Ya.isChecked) "Ya" else "Tidak"
+            val question_16 = if (binding.question16.Ya.isChecked) "Ya" else "Tidak"
+            val question_17 = if (binding.question17.Ya.isChecked) "Ya" else "Tidak"
+            val question_18 = if (binding.question18.Ya.isChecked) "Ya" else "Tidak"
+            val question_19 = if (binding.question19.Ya.isChecked) "Ya" else "Tidak"
+            val question_20 = if (binding.question20.Ya.isChecked) "Ya" else "Tidak"
+            val question_21 = if (binding.question21.Ya.isChecked) "Ya" else "Tidak"
+
+            bundleData?.apply {
+                putString("question_11", question_11)
+                putString("question_12", question_12)
+                putString("question_13", question_13)
+                putString("question_14", question_14)
+                putString("question_15", question_15)
+                putString("question_16", question_16)
+                putString("question_17", question_17)
+                putString("question_18", question_18)
+                putString("question_19", question_19)
+                putString("question_20", question_20)
+                putString("question_21", question_21)
+            }
             val move = Intent(this, PartThreeActivity::class.java)
+            if (bundleData != null) {
+                move.putExtras(bundleData)
+                Log.i("PartTwo = ", bundleData.toString())
+            } else {
+                Log.i("PartTwo = ", "DATA KOSONG!")
+            }
             startActivity(move)
         }
     }

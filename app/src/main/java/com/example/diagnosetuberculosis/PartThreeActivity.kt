@@ -1,7 +1,9 @@
 package com.example.diagnosetuberculosis
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.example.diagnosetuberculosis.databinding.ActivityPartThreeBinding
 
 class PartThreeActivity : AppCompatActivity() {
@@ -13,7 +15,47 @@ class PartThreeActivity : AppCompatActivity() {
         binding = ActivityPartThreeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val bundleData = intent.extras
         changeContent()
+        btnNext(bundleData)
+    }
+
+    private fun btnNext(bundleData: Bundle?) {
+        binding.buttonNext.button.setOnClickListener() {
+            val question_22 = if (binding.question22.Ya.isChecked) "Ya" else "Tidak"
+            val question_23 = if (binding.question23.Ya.isChecked) "Ya" else "Tidak"
+            val question_24 = if (binding.question24.Ya.isChecked) "Ya" else "Tidak"
+            val question_25 = if (binding.question25.Ya.isChecked) "Ya" else "Tidak"
+            val question_26 = if (binding.question26.Ya.isChecked) "Ya" else "Tidak"
+            val question_27 = if (binding.question27.Ya.isChecked) "Ya" else "Tidak"
+            val question_28 = if (binding.question28.Ya.isChecked) "Ya" else "Tidak"
+            val question_29 = if (binding.question29.Ya.isChecked) "Ya" else "Tidak"
+            val question_30 = if (binding.question30.Ya.isChecked) "Ya" else "Tidak"
+            val question_31 = if (binding.question31.Ya.isChecked) "Ya" else "Tidak"
+            val question_32 = if (binding.question32.Ya.isChecked) "Ya" else "Tidak"
+
+            bundleData?.apply {
+                putString("question_22", question_22)
+                putString("question_23", question_23)
+                putString("question_24", question_24)
+                putString("question_25", question_25)
+                putString("question_26", question_26)
+                putString("question_27", question_27)
+                putString("question_28", question_28)
+                putString("question_29", question_29)
+                putString("question_30", question_30)
+                putString("question_31", question_31)
+                putString("question_32", question_32)
+            }
+            val move = Intent(this, ResultOneActivity::class.java)
+            if (bundleData != null) {
+                move.putExtras(bundleData)
+                Log.i("PartThree = ", bundleData.toString())
+            } else {
+                Log.i("PartThree = ", "DATA KOSONG!")
+            }
+            startActivity(move)
+        }
     }
 
     private fun changeContent() {

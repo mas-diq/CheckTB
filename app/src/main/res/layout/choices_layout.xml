@@ -46,34 +46,45 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textNomor" />
 
-            <RadioButton
-                android:id="@+id/rbTidak"
-                android:layout_width="wrap_content"
+            <RadioGroup
+                android:id="@+id/rbGroup"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="@string/tidak"
-                android:textColor="@color/dark_grey"
-                android:textSize="14sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/rbYa"
-                app:layout_constraintStart_toStartOf="@id/textPertanyaan"
-                app:layout_constraintTop_toBottomOf="@id/textPertanyaan" />
+                android:layout_marginHorizontal="24dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@+id/textPertanyaan"
+                app:layout_constraintStart_toStartOf="@+id/textPertanyaan"
+                app:layout_constraintTop_toBottomOf="@+id/textPertanyaan">
 
-            <RadioButton
-                android:id="@+id/rbYa"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_weight="1"
-                android:fontFamily="@font/montserrat_regular"
-                android:text="@string/ya"
-                android:textColor="@color/dark_grey"
-                android:textSize="14sp"
-                app:layout_constraintEnd_toEndOf="@id/textPertanyaan"
-                app:layout_constraintStart_toEndOf="@id/rbTidak"
-                app:layout_constraintTop_toBottomOf="@id/textPertanyaan" />
+                <RadioButton
+                    android:id="@+id/Tidak"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/tidak"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/Ya"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/Ya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="@string/ya"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="14sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/Tidak"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </RadioGroup>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
