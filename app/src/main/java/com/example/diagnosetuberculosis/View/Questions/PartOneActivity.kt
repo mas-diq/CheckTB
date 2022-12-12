@@ -1,10 +1,12 @@
 package com.example.diagnosetuberculosis.View.Questions
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isNotEmpty
 import com.example.diagnosetuberculosis.databinding.ActivityPartOneBinding
+
 
 class PartOneActivity : AppCompatActivity() {
 
@@ -22,16 +24,99 @@ class PartOneActivity : AppCompatActivity() {
     private fun btnNext() {
         binding.buttonNext.button.setOnClickListener() {
             val bundleData = Bundle()
-            val question_1 = if (binding.question1.Ya.isChecked) "Ya" else "Tidak"
-            val question_2 = if (binding.question2.Ya.isChecked) "Ya" else "Tidak"
-            val question_3 = if (binding.question3.Ya.isChecked) "Ya" else "Tidak"
-            val question_4 = if (binding.question4.Ya.isChecked) "Ya" else "Tidak"
-            val question_5 = if (binding.question5.Ya.isChecked) "Ya" else "Tidak"
-            val question_6 = if (binding.question6.Ya.isChecked) "Ya" else "Tidak"
-            val question_7 = if (binding.question7.Ya.isChecked) "Ya" else "Tidak"
-            val question_8 = if (binding.question8.Ya.isChecked) "Ya" else "Tidak"
-            val question_9 = if (binding.question9.Ya.isChecked) "Ya" else "Tidak"
-            val question_10 = if (binding.question10.Ya.isChecked) "Ya" else "Tidak"
+            val question_1 =
+                when (binding.question2.rbGroup.isNotEmpty()) {
+                    binding.question2.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                    binding.question2.TidakSetuju.isChecked -> "TidakSetuju"
+                    binding.question2.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                    binding.question2.CukupSetuju.isChecked -> "CukupSetuju"
+                    binding.question2.Setuju.isChecked -> "Setuju"
+                    binding.question2.SangatSetuju.isChecked -> "SangatSetuju"
+                    else -> "NULL"
+                }
+            val question_2 =
+                when (binding.question2.rbGroup.isNotEmpty()) {
+                    binding.question2.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                    binding.question2.TidakSetuju.isChecked -> "TidakSetuju"
+                    binding.question2.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                    binding.question2.CukupSetuju.isChecked -> "CukupSetuju"
+                    binding.question2.Setuju.isChecked -> "Setuju"
+                    binding.question2.SangatSetuju.isChecked -> "SangatSetuju"
+                    else -> "NULL"
+                }
+            val question_3 =
+                when (binding.question3.rbGroup.isNotEmpty()) {
+                    binding.question3.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                    binding.question3.TidakSetuju.isChecked -> "TidakSetuju"
+                    binding.question3.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                    binding.question3.CukupSetuju.isChecked -> "CukupSetuju"
+                    binding.question3.Setuju.isChecked -> "Setuju"
+                    binding.question3.SangatSetuju.isChecked -> "SangatSetuju"
+                    else -> "NULL"
+                }
+            val question_4 = when (binding.question4.rbGroup.isNotEmpty()) {
+                binding.question4.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question4.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question4.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question4.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question4.Setuju.isChecked -> "Setuju"
+                binding.question4.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_5 = when (binding.question5.rbGroup.isNotEmpty()) {
+                binding.question5.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question5.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question5.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question5.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question5.Setuju.isChecked -> "Setuju"
+                binding.question5.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_6 = when (binding.question6.rbGroup.isNotEmpty()) {
+                binding.question6.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question6.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question6.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question6.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question6.Setuju.isChecked -> "Setuju"
+                binding.question6.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_7 = when (binding.question7.rbGroup.isNotEmpty()) {
+                binding.question7.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question7.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question7.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question7.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question7.Setuju.isChecked -> "Setuju"
+                binding.question7.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_8 = when (binding.question8.rbGroup.isNotEmpty()) {
+                binding.question8.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question8.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question8.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question8.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question8.Setuju.isChecked -> "Setuju"
+                binding.question8.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_9 = when (binding.question9.rbGroup.isNotEmpty()) {
+                binding.question9.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question9.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question9.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question9.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question9.Setuju.isChecked -> "Setuju"
+                binding.question9.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_10 = when (binding.question10.rbGroup.isNotEmpty()) {
+                binding.question10.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question10.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question10.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question10.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question10.Setuju.isChecked -> "Setuju"
+                binding.question10.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
 
             bundleData.apply {
                 putString("question_1", question_1)
@@ -57,7 +142,7 @@ class PartOneActivity : AppCompatActivity() {
         binding.apply {
             question1.apply {
                 textNomor.text = "Pertanyaan 1"
-                textPertanyaan.text = "Batuk terus-menerus dan berdahak selama tiga minggu / lebih"
+                textPertanyaan.text = "Batuk terus-menerus dan berdahak selama tiga minggu / lebih."
                 textPertanyaan.setLines(3)
             }
             question2.apply {
@@ -84,24 +169,24 @@ class PartOneActivity : AppCompatActivity() {
             }
             question7.apply {
                 textNomor.text = "Pertanyaan 7"
-                textPertanyaan.text = "Rasa kurang enak badan/malaise, lemah."
+                textPertanyaan.text = "Rasa kurang enak badan / malaise, lemah."
                 textPertanyaan.setLines(2)
             }
             question8.apply {
                 textNomor.text = "Pertanyaan 8"
-                textPertanyaan.text = "Berkeringat di malam hari walaupun tidak melakukan apa-apa."
+                textPertanyaan.text = "Berkeringat di malam hari walaupun tidak melakukan apa - apa."
                 textPertanyaan.setLines(3)
             }
             question9.apply {
                 textNomor.text = "Pertanyaan 9"
                 textPertanyaan.text =
-                    "Munculnya benjolan-benjolan pada bagian yang mengalami gangguan kelenjar seperti leher, sela paha, serta ketiak."
-                textPertanyaan.setLines(6)
+                    "Munculnya benjolan - benjolan pada bagian yang mengalami gangguan kelenjar seperti leher, sela paha, serta ketiak."
+                textPertanyaan.setLines(4)
             }
             question10.apply {
                 textNomor.text = "Pertanyaan 10"
                 textPertanyaan.text = "Ada tanda-tanda radang di daerah sekitar benjolan kelenjar."
-                textPertanyaan.setLines(3)
+                textPertanyaan.setLines(2)
             }
         }
     }

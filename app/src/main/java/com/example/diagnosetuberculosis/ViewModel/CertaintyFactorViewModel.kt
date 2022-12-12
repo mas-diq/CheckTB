@@ -14,7 +14,6 @@ class CertaintyFactorViewModel : ViewModel() {
         g4: String?
     ): Double {
         val Values = doubleArrayOf(
-
             (if (g1 == "Ya") 0.8 else 0.0),
             (if (g2 == "Ya") 0.6 else 0.0),
             (if (g3 == "Ya") 0.6 else 0.0),
@@ -82,7 +81,7 @@ class CertaintyFactorViewModel : ViewModel() {
             (if (g8 == "Ya") -0.4 else 0.0),
             (if (g16 == "Ya") 1.0 else 0.0),
             (if (g17 == "Ya") 0.8 else 0.0),
-            (if (g18 == "Ya") 0.8 else 0.0),
+            (if (g18 == "Ya") 0.8 else 0.0)
         )
         val persentages = String.format("%.3f", Values.sum()).toDouble()
         return persentages

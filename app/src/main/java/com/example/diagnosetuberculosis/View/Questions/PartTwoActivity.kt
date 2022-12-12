@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.core.view.isNotEmpty
 import com.example.diagnosetuberculosis.databinding.ActivityPartTwoBinding
 
 class PartTwoActivity : AppCompatActivity() {
@@ -22,17 +23,105 @@ class PartTwoActivity : AppCompatActivity() {
 
     private fun btnNext(bundleData: Bundle?) {
         binding.buttonNext.button.setOnClickListener() {
-            val question_11 = if (binding.question11.Ya.isChecked) "Ya" else "Tidak"
-            val question_12 = if (binding.question12.Ya.isChecked) "Ya" else "Tidak"
-            val question_13 = if (binding.question13.Ya.isChecked) "Ya" else "Tidak"
-            val question_14 = if (binding.question14.Ya.isChecked) "Ya" else "Tidak"
-            val question_15 = if (binding.question15.Ya.isChecked) "Ya" else "Tidak"
-            val question_16 = if (binding.question16.Ya.isChecked) "Ya" else "Tidak"
-            val question_17 = if (binding.question17.Ya.isChecked) "Ya" else "Tidak"
-            val question_18 = if (binding.question18.Ya.isChecked) "Ya" else "Tidak"
-            val question_19 = if (binding.question19.Ya.isChecked) "Ya" else "Tidak"
-            val question_20 = if (binding.question20.Ya.isChecked) "Ya" else "Tidak"
-            val question_21 = if (binding.question21.Ya.isChecked) "Ya" else "Tidak"
+            val question_11 = when (binding.question11.rbGroup.isNotEmpty()) {
+                binding.question11.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question11.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question11.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question11.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question11.Setuju.isChecked -> "Setuju"
+                binding.question11.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_12 = when (binding.question12.rbGroup.isNotEmpty()) {
+                binding.question12.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question12.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question12.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question12.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question12.Setuju.isChecked -> "Setuju"
+                binding.question12.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_13 = when (binding.question13.rbGroup.isNotEmpty()) {
+                binding.question13.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question13.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question13.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question13.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question13.Setuju.isChecked -> "Setuju"
+                binding.question13.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_14 = when (binding.question14.rbGroup.isNotEmpty()) {
+                binding.question14.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question14.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question14.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question14.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question14.Setuju.isChecked -> "Setuju"
+                binding.question14.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_15 = when (binding.question15.rbGroup.isNotEmpty()) {
+                binding.question15.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question15.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question15.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question15.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question15.Setuju.isChecked -> "Setuju"
+                binding.question15.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_16 = when (binding.question16.rbGroup.isNotEmpty()) {
+                binding.question16.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question16.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question16.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question16.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question16.Setuju.isChecked -> "Setuju"
+                binding.question16.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_17 = when (binding.question17.rbGroup.isNotEmpty()) {
+                binding.question17.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question17.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question17.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question17.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question17.Setuju.isChecked -> "Setuju"
+                binding.question17.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_18 = when (binding.question18.rbGroup.isNotEmpty()) {
+                binding.question18.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question18.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question18.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question18.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question18.Setuju.isChecked -> "Setuju"
+                binding.question18.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_19 = when (binding.question19.rbGroup.isNotEmpty()) {
+                binding.question19.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question19.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question19.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question19.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question19.Setuju.isChecked -> "Setuju"
+                binding.question19.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_20 = when (binding.question20.rbGroup.isNotEmpty()) {
+                binding.question20.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question20.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question20.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question20.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question20.Setuju.isChecked -> "Setuju"
+                binding.question20.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_21 = when (binding.question21.rbGroup.isNotEmpty()) {
+                binding.question21.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question21.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question21.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question21.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question21.Setuju.isChecked -> "Setuju"
+                binding.question21.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
 
             bundleData?.apply {
                 putString("question_11", question_11)
@@ -74,7 +163,7 @@ class PartTwoActivity : AppCompatActivity() {
                 textNomor.text = "Pertanyaan 13"
                 textPertanyaan.text =
                     "Membesarnya benjolan kelenjar yang mengakibatkan hari demi hari kondisinya semakin memburuk dan merusak tubuh."
-                textPertanyaan.setLines(6)
+                textPertanyaan.setLines(4)
             }
             question14.apply {
                 textNomor.text = "Pertanyaan 14"
@@ -86,24 +175,21 @@ class PartTwoActivity : AppCompatActivity() {
                 textNomor.text = "Pertanyaan 15"
                 textPertanyaan.text =
                     "Terdapat luka pada jaringan kulit atau kulit yang disebabkan pecahnya benjolan kelenjar getah bening."
-                textPertanyaan.setLines(5)
+                textPertanyaan.setLines(4)
             }
             question16.apply {
                 textNomor.text = "Pertanyaan 16"
                 textPertanyaan.text = "Timbulnya benjolan di payudara."
-                textPertanyaan.setLines(2)
-
             }
             question17.apply {
                 textNomor.text = "Pertanyaan 17"
                 textPertanyaan.text = "Rasa nyeri di bagian payudara."
-                textPertanyaan.setLines(2)
             }
             question18.apply {
                 textNomor.text = "Pertanyaan 18"
                 textPertanyaan.text =
                     "Adanya tanda radang di sekitar benjolan yang timbul di payudara."
-                textPertanyaan.setLines(3)
+                textPertanyaan.setLines(2)
             }
             question19.apply {
                 textNomor.text = "Pertanyaan 19"
@@ -114,13 +200,13 @@ class PartTwoActivity : AppCompatActivity() {
             question20.apply {
                 textNomor.text = "Pertanyaan 20"
                 textPertanyaan.text = "Penderita enggan menggerakkan punggungnya."
-                textPertanyaan.setLines(3)
+                textPertanyaan.setLines(2)
             }
             question21.apply {
                 textNomor.text = "Pertanyaan 21"
                 textPertanyaan.text =
                     "Penderita menolak untuk membungkuk atau mengangkat barang dari lantai, bila diminta penderita akan menekuk lututunya agar punggung tetap lurus."
-                textPertanyaan.setLines(7)
+                textPertanyaan.setLines(6)
             }
         }
     }

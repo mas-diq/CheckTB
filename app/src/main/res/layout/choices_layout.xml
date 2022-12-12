@@ -24,7 +24,7 @@
                 android:id="@+id/textNomor"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="14dp"
                 android:fontFamily="@font/montserrat_medium"
                 android:text="Pertanyaan 1"
@@ -36,9 +36,9 @@
                 android:id="@+id/textPertanyaan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginStart="12dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="48dp"
+                android:layout_marginEnd="24dp"
                 android:fontFamily="@font/montserrat_semi_bold"
                 android:lines="1"
                 android:text="Lorem Ipsum Sit Dolor Amet"
@@ -48,42 +48,116 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/textNomor" />
 
+            <TextView
+                android:id="@+id/textTidak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Tidak"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/rbGroup"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPertanyaan" />
+
+            <TextView
+                android:id="@+id/textYakin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Ya"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/rbGroup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPertanyaan" />
+
             <RadioGroup
                 android:id="@+id/rbGroup"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="24dp"
                 android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/textPertanyaan"
+                app:layout_constraintEnd_toStartOf="@id/textYakin"
+                app:layout_constraintStart_toEndOf="@+id/textTidak"
                 app:layout_constraintTop_toBottomOf="@+id/textPertanyaan">
 
                 <RadioButton
-                    android:id="@+id/Tidak"
+                    android:id="@+id/SangatTidakSetuju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/montserrat_regular"
-                    android:text="@string/tidak"
+                    android:text="1"
                     android:textColor="@color/dark_grey"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@id/Ya"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <RadioButton
-                    android:id="@+id/Ya"
+                    android:id="@+id/TidakSetuju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/montserrat_regular"
-                    android:text="@string/ya"
+                    android:text="2"
                     android:textColor="@color/dark_grey"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/CukupTidakSetuju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="3"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/CukupSetuju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="4"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/Setuju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="5"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/SangatSetuju"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:text="6"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/Tidak"
+                    app:layout_constraintStart_toEndOf="@+id/SangatTidakSetuju"
                     app:layout_constraintTop_toTopOf="parent" />
 
             </RadioGroup>
