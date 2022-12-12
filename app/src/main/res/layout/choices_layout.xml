@@ -46,7 +46,8 @@
                 android:textSize="18sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/textNomor" />
+                app:layout_constraintTop_toBottomOf="@id/textNomor"
+                tools:targetApi="o" />
 
             <TextView
                 android:id="@+id/textTidak"

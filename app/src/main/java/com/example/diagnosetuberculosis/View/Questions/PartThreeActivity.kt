@@ -197,7 +197,6 @@ class PartThreeActivity : AppCompatActivity() {
             question32.apply {
                 textNomor.text = "Pertanyaan 31"
                 textPertanyaan.text = "Gangguan pada penglihatan."
-                textPertanyaan.setLines(2)
             }
         }
     }

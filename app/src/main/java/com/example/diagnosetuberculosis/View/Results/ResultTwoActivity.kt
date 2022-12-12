@@ -1,10 +1,10 @@
-package com.example.diagnoseTuberkulosis.View.Results
+package com.example.diagnosetuberculosis.View.Results
 
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import com.example.diagnoseTuberkulosis.databinding.ActivityResultTwoBinding
+import com.example.diagnosetuberculosis.databinding.ActivityResultTwoBinding
 
 class ResultTwoActivity : AppCompatActivity() {
 
