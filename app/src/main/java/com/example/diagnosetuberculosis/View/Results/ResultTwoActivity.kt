@@ -1,9 +1,11 @@
 package com.example.diagnosetuberculosis.View.Results
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.diagnosetuberculosis.View.MainActivity
 import com.example.diagnosetuberculosis.databinding.ActivityResultTwoBinding
 
 class ResultTwoActivity : AppCompatActivity() {
@@ -17,6 +19,12 @@ class ResultTwoActivity : AppCompatActivity() {
 
         val bundleDataResults = intent.extras
         changeContent(bundleDataResults)
+
+        binding.btnSelanjutnya.button.setOnClickListener() {
+            val move = Intent(this, MainActivity::class.java)
+            startActivity(move)
+            finish()
+        }
     }
 
     @SuppressLint("SetTextI18n")
