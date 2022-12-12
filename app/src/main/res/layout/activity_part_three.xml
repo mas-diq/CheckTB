@@ -17,7 +17,7 @@
             android:layout_height="match_parent"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="24sp"
-            android:progress="100"
+            android:progress="96"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -155,7 +155,7 @@
             android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/question29" />
+            app:layout_constraintTop_toBottomOf="@id/question30" />
 
         <include
             android:id="@+id/question32"

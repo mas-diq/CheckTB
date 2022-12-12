@@ -64,16 +64,16 @@ class PartThreeActivity : AppCompatActivity() {
                 textNomor.text = "Pertanyaan 22"
                 textPertanyaan.text =
                     "Rasa nyeri pada punggung berkurang bila penderita beristirat."
+                textPertanyaan.setLines(2)
             }
             question23.apply {
                 textNomor.text = "Pertanyaan 23"
-                textPertanyaan.text =
-                    "Timbulnya benjolan di bagian punggung/tulang belakang."
+                textPertanyaan.text = "Timbulnya benjolan di bagian punggung/tulang belakang."
+                textPertanyaan.setLines(2)
             }
             question24.apply {
                 textNomor.text = "Pertanyaan 24"
-                textPertanyaan.text =
-                    "Sakit kepala terus menerus."
+                textPertanyaan.text = "Sakit kepala terus menerus."
             }
             question25.apply {
                 textNomor.text = "Pertanyaan 25"
@@ -82,6 +82,7 @@ class PartThreeActivity : AppCompatActivity() {
             question26.apply {
                 textNomor.text = "Pertanyaan 26"
                 textPertanyaan.text = "Timbulnya benjolan di payudara."
+                textPertanyaan.setLines(2)
             }
             question27.apply {
                 textNomor.text = "Pertanyaan 27"
@@ -98,16 +99,16 @@ class PartThreeActivity : AppCompatActivity() {
             question30.apply {
                 textNomor.text = "Pertanyaan 30"
                 textPertanyaan.text = "Tangan dan kaki sulit digerakkan."
+                textPertanyaan.setLines(2)
             }
             question31.apply {
                 textNomor.text = "Pertanyaan 31"
-                textPertanyaan.text =
-                    "Mulut miring."
+                textPertanyaan.text = "Mulut miring."
             }
             question32.apply {
                 textNomor.text = "Pertanyaan 31"
-                textPertanyaan.text =
-                    "Gangguan pada penglihatan."
+                textPertanyaan.text = "Gangguan pada penglihatan."
+                textPertanyaan.setLines(2)
             }
         }
     }

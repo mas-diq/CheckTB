@@ -57,7 +57,7 @@ class PartOneActivity : AppCompatActivity() {
         binding.apply {
             question1.apply {
                 textNomor.text = "Pertanyaan 1"
-                textPertanyaan.text = "Batuk terus-menerus dan berdahak selama tiga minggu/lebih"
+                textPertanyaan.text = "Batuk terus-menerus dan berdahak selama tiga minggu / lebih"
                 textPertanyaan.setLines(3)
             }
             question2.apply {
@@ -88,18 +88,18 @@ class PartOneActivity : AppCompatActivity() {
             question8.apply {
                 textNomor.text = "Pertanyaan 8"
                 textPertanyaan.text = "Berkeringat di malam hari walaupun tidak melakukan apa-apa."
-                textPertanyaan.setLines(2)
+                textPertanyaan.setLines(3)
             }
             question9.apply {
                 textNomor.text = "Pertanyaan 9"
                 textPertanyaan.text =
                     "Munculnya benjolan-benjolan pada bagian yang mengalami gangguan kelenjar seperti leher, sela paha, serta ketiak."
-                textPertanyaan.setLines(2)
+                textPertanyaan.setLines(4)
             }
             question10.apply {
                 textNomor.text = "Pertanyaan 10"
                 textPertanyaan.text = "Ada tanda-tanda radang di daerah sekitar benjolan kelenjar."
-                textPertanyaan.setLines(2)
+                textPertanyaan.setLines(3)
             }
         }
     }

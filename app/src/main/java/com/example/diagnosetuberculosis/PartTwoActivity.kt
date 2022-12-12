@@ -63,56 +63,64 @@ class PartTwoActivity : AppCompatActivity() {
             question11.apply {
                 textNomor.text = "Pertanyaan 11"
                 textPertanyaan.text = "Benjolan kelenjar mudah digerakkan."
+                textPertanyaan.setLines(2)
             }
             question12.apply {
                 textNomor.text = "Pertanyaan 12"
                 textPertanyaan.text = "Benjolan kelenjar yang timbul terasa kenyal."
+                textPertanyaan.setLines(2)
             }
             question13.apply {
                 textNomor.text = "Pertanyaan 13"
                 textPertanyaan.text =
                     "Membesarnya benjolan kelenjar yang mengakibatkan hari demi hari kondisinya semakin memburuk dan merusak tubuh."
-                textPertanyaan.setLines(2)
+                textPertanyaan.setLines(4)
             }
             question14.apply {
                 textNomor.text = "Pertanyaan 14"
                 textPertanyaan.text =
                     "Benjolan kelenjar pecah dan mengeluarkan cairan seperti nanah kotor."
-                textPertanyaan.setLines(2)
+                textPertanyaan.setLines(3)
             }
             question15.apply {
                 textNomor.text = "Pertanyaan 15"
                 textPertanyaan.text =
                     "Terdapat luka pada jaringan kulit atau kulit yang disebabkan pecahnya benjolan kelenjar getah bening."
-                textPertanyaan.setLines(2)
+                textPertanyaan.setLines(4)
             }
             question16.apply {
                 textNomor.text = "Pertanyaan 16"
                 textPertanyaan.text = "Timbulnya benjolan di payudara."
+                textPertanyaan.setLines(2)
+
             }
             question17.apply {
                 textNomor.text = "Pertanyaan 17"
                 textPertanyaan.text = "Rasa nyeri di bagian payudara."
+                textPertanyaan.setLines(2)
             }
             question18.apply {
                 textNomor.text = "Pertanyaan 18"
                 textPertanyaan.text =
                     "Adanya tanda radang di sekitar benjolan yang timbul di payudara."
+                textPertanyaan.setLines(3)
             }
             question19.apply {
                 textNomor.text = "Pertanyaan 19"
                 textPertanyaan.text =
                     "Rasa nyeri pada bagian punggung atau mengalami kekakuan punggung."
+                textPertanyaan.setLines(3)
             }
             question20.apply {
                 textNomor.text = "Pertanyaan 20"
                 textPertanyaan.text = "Penderita enggan menggerakkan punggungnya."
+                textPertanyaan.setLines(3)
             }
             question21.apply {
                 textNomor.text = "Pertanyaan 21"
                 textPertanyaan.text =
                     "Penderita menolak untuk membungkuk atau mengangkat barang dari lantai, bila diminta penderita akan menekuk lututunya agar punggung tetap lurus."
-                textPertanyaan.setLines(3)
+                textPertanyaan.setLines(5)
             }
         }
     }
