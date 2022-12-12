@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PartTwoActivity">
+    tools:context=".View.Questions.PartTwoActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -171,7 +171,7 @@
 
         <include
             android:id="@+id/buttonNext"
-            layout="@layout/button_layout"
+            layout="@layout/button_layout_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"

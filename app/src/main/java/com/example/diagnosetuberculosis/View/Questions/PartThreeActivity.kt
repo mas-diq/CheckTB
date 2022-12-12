@@ -1,9 +1,10 @@
-package com.example.diagnosetuberculosis
+package com.example.diagnosetuberculosis.View.Questions
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import com.example.diagnosetuberculosis.View.Results.ResultOneActivity
 import com.example.diagnosetuberculosis.databinding.ActivityPartThreeBinding
 
 class PartThreeActivity : AppCompatActivity() {
@@ -64,12 +65,12 @@ class PartThreeActivity : AppCompatActivity() {
                 textNomor.text = "Pertanyaan 22"
                 textPertanyaan.text =
                     "Rasa nyeri pada punggung berkurang bila penderita beristirat."
-                textPertanyaan.setLines(2)
+                textPertanyaan.setLines(3)
             }
             question23.apply {
                 textNomor.text = "Pertanyaan 23"
-                textPertanyaan.text = "Timbulnya benjolan di bagian punggung/tulang belakang."
-                textPertanyaan.setLines(2)
+                textPertanyaan.text = "Timbulnya benjolan di bagian punggung / tulang belakang."
+                textPertanyaan.setLines(3)
             }
             question24.apply {
                 textNomor.text = "Pertanyaan 24"

@@ -13,42 +13,42 @@
         android:theme="@style/Theme.DiagnoseTuberculosis"
         tools:targetApi="31">
         <activity
-            android:name=".RecommandationActivity"
+            android:name=".View.Articles.RecommandationActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ResultTwoActivity"
+            android:name=".View.Results.ResultTwoActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ResultOneActivity"
+            android:name=".View.Results.ResultOneActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PartThreeActivity"
+            android:name=".View.Questions.PartThreeActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PartTwoActivity"
+            android:name=".View.Questions.PartTwoActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".PartOneActivity"
+            android:name=".View.Questions.PartOneActivity"
             android:exported="true">
 
             <intent-filter>
@@ -61,14 +61,14 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name=".View.SplashActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".View.MainActivity"
             android:exported="false">
 
 

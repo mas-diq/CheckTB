@@ -1,4 +1,4 @@
-package com.example.diagnosetuberculosis
+package com.example.diagnosetuberculosis.View
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

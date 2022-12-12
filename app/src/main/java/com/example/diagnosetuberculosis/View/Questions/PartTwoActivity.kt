@@ -1,4 +1,4 @@
-package com.example.diagnosetuberculosis
+package com.example.diagnosetuberculosis.View.Questions
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -74,7 +74,7 @@ class PartTwoActivity : AppCompatActivity() {
                 textNomor.text = "Pertanyaan 13"
                 textPertanyaan.text =
                     "Membesarnya benjolan kelenjar yang mengakibatkan hari demi hari kondisinya semakin memburuk dan merusak tubuh."
-                textPertanyaan.setLines(4)
+                textPertanyaan.setLines(6)
             }
             question14.apply {
                 textNomor.text = "Pertanyaan 14"
@@ -86,7 +86,7 @@ class PartTwoActivity : AppCompatActivity() {
                 textNomor.text = "Pertanyaan 15"
                 textPertanyaan.text =
                     "Terdapat luka pada jaringan kulit atau kulit yang disebabkan pecahnya benjolan kelenjar getah bening."
-                textPertanyaan.setLines(4)
+                textPertanyaan.setLines(5)
             }
             question16.apply {
                 textNomor.text = "Pertanyaan 16"
@@ -120,7 +120,7 @@ class PartTwoActivity : AppCompatActivity() {
                 textNomor.text = "Pertanyaan 21"
                 textPertanyaan.text =
                     "Penderita menolak untuk membungkuk atau mengangkat barang dari lantai, bila diminta penderita akan menekuk lututunya agar punggung tetap lurus."
-                textPertanyaan.setLines(5)
+                textPertanyaan.setLines(7)
             }
         }
     }

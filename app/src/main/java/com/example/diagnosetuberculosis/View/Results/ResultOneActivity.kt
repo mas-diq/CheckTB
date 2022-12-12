@@ -1,10 +1,13 @@
-package com.example.diagnosetuberculosis
+package com.example.diagnosetuberculosis.View.Results
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+import com.example.diagnosetuberculosis.ViewModel.CertaintyFactorViewModel
 import com.example.diagnosetuberculosis.databinding.ActivityResultOneBinding
 
 class ResultOneActivity : AppCompatActivity() {
@@ -89,6 +92,9 @@ class ResultOneActivity : AppCompatActivity() {
         tbTulang: Double,
         tbOtak: Double
     ) {
+        binding.btnSelanjutnya.button.setOnClickListener(){
+            btnNext(tbParu, tbKelenjar, tbPayudara, tbTulang, tbOtak)
+        }
         binding.apply {
             answer1.apply {
                 textPersentase.text = "$tbParu%"
@@ -98,9 +104,10 @@ class ResultOneActivity : AppCompatActivity() {
                 textPertanyaan.text =
                     """
                         Kelenjar
-                        Getah Bening
+                        Getah
+                        Bening
                     """.trimIndent()
-                textPertanyaan.setLines(2)
+                textPertanyaan.setLines(3)
             }
             answer3.apply {
                 textPersentase.text = "$tbPayudara%"
@@ -120,5 +127,27 @@ class ResultOneActivity : AppCompatActivity() {
                 textPertanyaan.text = "Otak"
             }
         }
+    }
+
+    private fun btnNext(
+        tbParu: Double,
+        tbKelenjar: Double,
+        tbPayudara: Double,
+        tbTulang: Double,
+        tbOtak: Double
+    ) {
+        val bundleDataResults = Bundle()
+        bundleDataResults.apply {
+            putString("tbParu", tbParu.toString())
+            putString("tbKelenjar", tbKelenjar.toString())
+            putString("tbPayudara", tbPayudara.toString())
+            putString("tbTulang", tbTulang.toString())
+            putString("tbOtak", tbOtak.toString())
+        }
+
+        val move = Intent(this, ResultTwoActivity::class.java)
+        move.putExtras(bundleDataResults)
+        Log.i("Results = ", bundleDataResults.toString())
+        startActivity(move)
     }
 }

@@ -1,4 +1,4 @@
-package com.example.diagnosetuberculosis
+package com.example.diagnosetuberculosis.ViewModel
 
 import androidx.lifecycle.ViewModel
 
