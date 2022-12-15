@@ -1,8 +1,9 @@
 package com.example.diagnosetuberculosis.View
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.example.diagnosetuberculosis.View.Articles.ArticlesActivity
 import com.example.diagnosetuberculosis.View.Questions.PartOneActivity
 import com.example.diagnosetuberculosis.databinding.ActivityMainBinding
 
@@ -17,6 +18,11 @@ class MainActivity : AppCompatActivity() {
 
         binding.btnSelanjutnya.button.setOnClickListener() {
             val move = Intent(this, PartOneActivity::class.java)
+            startActivity(move)
+        }
+
+        binding.btnArtikel.button.setOnClickListener {
+            val move = Intent(this, ArticlesActivity::class.java)
             startActivity(move)
         }
     }
