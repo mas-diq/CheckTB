@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.diagnosetuberculosis.View.Articles.Objects.ArticleGenerator
 import com.example.diagnosetuberculosis.View.MainActivity
 import com.example.diagnosetuberculosis.databinding.ActivityArticlesBinding
 

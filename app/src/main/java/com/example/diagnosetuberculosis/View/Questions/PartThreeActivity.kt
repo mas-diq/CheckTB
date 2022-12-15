@@ -154,12 +154,10 @@ class PartThreeActivity : AppCompatActivity() {
                 textNomor.text = "Pertanyaan 22"
                 textPertanyaan.text =
                     "Rasa nyeri pada punggung berkurang bila penderita beristirat."
-                textPertanyaan.setLines(3)
             }
             question23.apply {
                 textNomor.text = "Pertanyaan 23"
                 textPertanyaan.text = "Timbulnya benjolan di bagian punggung / tulang belakang."
-                textPertanyaan.setLines(2)
             }
             question24.apply {
                 textNomor.text = "Pertanyaan 24"
@@ -188,14 +186,13 @@ class PartThreeActivity : AppCompatActivity() {
             question30.apply {
                 textNomor.text = "Pertanyaan 30"
                 textPertanyaan.text = "Tangan dan kaki sulit digerakkan."
-                textPertanyaan.setLines(1)
             }
             question31.apply {
                 textNomor.text = "Pertanyaan 31"
                 textPertanyaan.text = "Mulut miring."
             }
             question32.apply {
-                textNomor.text = "Pertanyaan 31"
+                textNomor.text = "Pertanyaan 32"
                 textPertanyaan.text = "Gangguan pada penglihatan."
             }
         }

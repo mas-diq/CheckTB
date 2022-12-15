@@ -1,4 +1,6 @@
-package com.example.diagnosetuberculosis.View.Articles
+package com.example.diagnosetuberculosis.View.Articles.Objects
+
+import com.example.diagnosetuberculosis.View.Articles.Articles
 
 object ArticleGenerator {
     fun getArticles(): List<Articles> {
@@ -107,7 +109,7 @@ object ArticleGenerator {
             "Source: patient.info"
         )
 
-        // 5. Spine Tuberculosis / tulang belakang
+        // 5. Brain tuber / otak
         val article_otak_1 = Articles(
             "Meningitis - tuberculous",
             "Tuberculous meningitis is caused by Mycobacterium tuberculosis. This is the bacterium ...",
@@ -132,7 +134,6 @@ object ArticleGenerator {
             "https://www.healthline.com/health/meningitis-tuberculosis",
             "Source: www.healthline.com"
         )
-
 
         return arrayListOf(
             article_paru_1,

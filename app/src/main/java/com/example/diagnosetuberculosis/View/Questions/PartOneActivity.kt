@@ -3,7 +3,9 @@ package com.example.diagnosetuberculosis.View.Questions
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.isEmpty
 import androidx.core.view.isNotEmpty
 import com.example.diagnosetuberculosis.databinding.ActivityPartOneBinding
 
@@ -143,17 +145,14 @@ class PartOneActivity : AppCompatActivity() {
             question1.apply {
                 textNomor.text = "Pertanyaan 1"
                 textPertanyaan.text = "Batuk terus-menerus dan berdahak selama tiga minggu / lebih."
-                textPertanyaan.setLines(3)
             }
             question2.apply {
                 textNomor.text = "Pertanyaan 2"
                 textPertanyaan.text = "Dahak bercampur darah / batuk darah."
-                textPertanyaan.setLines(2)
             }
             question3.apply {
                 textNomor.text = "Pertanyaan 3"
                 textPertanyaan.text = "Demam selama tiga minggu atau lebih."
-                textPertanyaan.setLines(2)
             }
             question4.apply {
                 textNomor.text = "Pertanyaan 4"
@@ -170,23 +169,20 @@ class PartOneActivity : AppCompatActivity() {
             question7.apply {
                 textNomor.text = "Pertanyaan 7"
                 textPertanyaan.text = "Rasa kurang enak badan / malaise, lemah."
-                textPertanyaan.setLines(2)
             }
             question8.apply {
                 textNomor.text = "Pertanyaan 8"
-                textPertanyaan.text = "Berkeringat di malam hari walaupun tidak melakukan apa - apa."
-                textPertanyaan.setLines(3)
+                textPertanyaan.text =
+                    "Berkeringat di malam hari walaupun tidak melakukan apa - apa."
             }
             question9.apply {
                 textNomor.text = "Pertanyaan 9"
                 textPertanyaan.text =
                     "Munculnya benjolan - benjolan pada bagian yang mengalami gangguan kelenjar seperti leher, sela paha, serta ketiak."
-                textPertanyaan.setLines(4)
             }
             question10.apply {
                 textNomor.text = "Pertanyaan 10"
                 textPertanyaan.text = "Ada tanda-tanda radang di daerah sekitar benjolan kelenjar."
-                textPertanyaan.setLines(2)
             }
         }
     }

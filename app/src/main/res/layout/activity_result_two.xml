@@ -1,123 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".View.Results.ResultTwoActivity">
 
-    <TextView
-        android:id="@+id/tvMain1"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginEnd="24dp"
-        android:fontFamily="@font/montserrat_semi_bold"
-        android:text="Berdasarkan Hasil Perhitungan Dengan Menggunakan Metode"
-        android:textAlignment="center"
-        android:textColor="@color/dark_grey"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content">
 
-    <TextView
-        android:id="@+id/tvMain2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:fontFamily="@font/montserrat_semi_bold"
-        android:text="Certainty Factor"
-        android:textAlignment="center"
-        android:textColor="@color/dark_grey"
-        android:textSize="24sp"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvMain1" />
+        <TextView
+            android:id="@+id/tvMain1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Berdasarkan Hasil Perhitungan Dengan Menggunakan Metode"
+            android:textAlignment="center"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/tvSecondary1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="18dp"
-        android:fontFamily="@font/montserrat_regular"
-        android:text="Kamu telah didiagnosis memiliki kemungkinan terkena penyakit tuberculosis sebesar:"
-        android:textAlignment="center"
-        android:textColor="@color/dark_grey"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/tvMain2"
-        app:layout_constraintStart_toStartOf="@+id/tvMain2"
-        app:layout_constraintTop_toBottomOf="@+id/tvMain2" />
+        <TextView
+            android:id="@+id/tvMain2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Certainty Factor"
+            android:textAlignment="center"
+            android:textColor="@color/dark_grey"
+            android:textSize="24sp"
+            android:textStyle="italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvMain1" />
 
-    <TextView
-        android:id="@+id/tvPersentages"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
-        android:fontFamily="@font/montserrat_semi_bold"
-        android:text="81%"
-        android:textAlignment="center"
-        android:textColor="@color/dark_grey"
-        android:textSize="86sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSecondary1" />
+        <TextView
+            android:id="@+id/tvSecondary1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="18dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Kamu telah didiagnosis memiliki kemungkinan terkena penyakit tuberculosis sebesar:"
+            android:textAlignment="center"
+            android:textColor="@color/dark_grey"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvMain2"
+            app:layout_constraintStart_toStartOf="@+id/tvMain2"
+            app:layout_constraintTop_toBottomOf="@+id/tvMain2" />
 
-    <TextView
-        android:id="@+id/tvValue"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
-        android:fontFamily="@font/montserrat_medium"
-        android:text="Tuberculosis Kelenjar Getah Bening"
-        android:textAlignment="center"
-        android:textColor="@color/dark_grey"
-        android:textSize="26sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPersentages" />
+        <TextView
+            android:id="@+id/tvPersentages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="81%"
+            android:textAlignment="center"
+            android:textColor="@color/dark_grey"
+            android:textSize="86sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSecondary1" />
 
-    <TextView
-        android:id="@+id/tvSecondary2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="24dp"
-        android:fontFamily="@font/montserrat_regular"
-        android:text="*Segera melakukan pemeriksaan lebih lanjut pada fasilitas kesehatan terdekat."
-        android:textAlignment="center"
-        android:textColor="@color/dark_grey"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/tvMain2"
-        app:layout_constraintStart_toStartOf="@+id/tvMain2"
-        app:layout_constraintTop_toBottomOf="@+id/tvValue" />
+        <TextView
+            android:id="@+id/tvValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="Tuberculosis Kelenjar Getah Bening"
+            android:textAlignment="center"
+            android:textColor="@color/dark_grey"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvPersentages" />
 
-    <include
-        android:id="@+id/btnArtikel"
-        layout="@layout/button_layout_secondary"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        android:layout_marginTop="42dp"
-        android:layout_marginBottom="42dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvSecondary2" />
+        <TextView
+            android:id="@+id/tvSecondary2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="24dp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="*Segera melakukan pemeriksaan lebih lanjut pada fasilitas kesehatan terdekat."
+            android:textAlignment="center"
+            android:textColor="@color/dark_grey"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/tvMain2"
+            app:layout_constraintStart_toStartOf="@+id/tvMain2"
+            app:layout_constraintTop_toBottomOf="@+id/tvValue" />
 
-    <include
-        android:id="@+id/btnSelanjutnya"
-        layout="@layout/button_layout_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnArtikel" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/tvArticle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:fontFamily="@font/montserrat_semi_bold"
+            android:text="Artikel Terkait"
+            android:textColor="@color/dark_grey"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvSecondary2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@id/btnSelanjutnya"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvArticle" />
+
+        <include
+            android:id="@+id/btnSelanjutnya"
+            layout="@layout/button_layout_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="42dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

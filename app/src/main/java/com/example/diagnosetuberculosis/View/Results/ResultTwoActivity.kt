@@ -2,9 +2,12 @@ package com.example.diagnosetuberculosis.View.Results
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.diagnosetuberculosis.View.Articles.ArticlesAdapter
+import com.example.diagnosetuberculosis.View.Articles.Objects.*
 import com.example.diagnosetuberculosis.View.MainActivity
 import com.example.diagnosetuberculosis.databinding.ActivityResultTwoBinding
 
@@ -20,6 +23,7 @@ class ResultTwoActivity : AppCompatActivity() {
         val bundleDataResults = intent.extras
         changeContent(bundleDataResults)
 
+        binding.btnSelanjutnya.button.text = "Kembali ke beranda"
         binding.btnSelanjutnya.button.setOnClickListener() {
             val move = Intent(this, MainActivity::class.java)
             startActivity(move)
@@ -40,19 +44,24 @@ class ResultTwoActivity : AppCompatActivity() {
                 if (tbParu > tbKelenjar && tbParu > tbPayudara && tbParu > tbTulang && tbParu > tbOtak) {
                     binding.tvPersentages.text = "$tbParu%"
                     binding.tvValue.text = "Tuberkulosis Paru-Paru"
+                    getDataParu()
                 } else if (tbKelenjar > tbPayudara && tbKelenjar > tbTulang && tbKelenjar > tbOtak) {
                     binding.tvPersentages.text = "$tbKelenjar%"
                     binding.tvValue.text = "Tuberkulosis Kelenjar Getah Bening"
                     binding.tvValue.setLines(2)
+                    getDataKelenjar()
                 } else if (tbPayudara > tbTulang && tbPayudara > tbOtak) {
                     binding.tvPersentages.text = "$tbPayudara%"
                     binding.tvValue.text = "Tuberkulosis Payudara"
+                    getDataPayudara()
                 } else if (tbTulang > tbOtak) {
                     binding.tvPersentages.text = "$tbTulang%"
                     binding.tvValue.text = "Tuberkulosis Tulang Belakang"
+                    getDataTulang()
                 } else {
                     binding.tvPersentages.text = "$tbOtak%"
                     binding.tvValue.text = "Tuberkulosis Otak"
+                    getDataOtak()
                 }
 
             } else {
@@ -62,4 +71,36 @@ class ResultTwoActivity : AppCompatActivity() {
             Log.i("Data Results = ", "DATA KOSONG!")
         }
     }
+
+    private fun getDataParu() {
+        onResume()
+        binding.rv.adapter = ArticlesAdapter(ArticleParu.getData())
+        binding.rv.layoutManager = LinearLayoutManager(this)
+    }
+
+    private fun getDataKelenjar() {
+        onResume()
+        binding.rv.adapter = ArticlesAdapter(ArticleKelenjar.getData())
+        binding.rv.layoutManager = LinearLayoutManager(this)
+    }
+
+    private fun getDataPayudara() {
+        onResume()
+        binding.rv.adapter = ArticlesAdapter(ArticlePayudara.getData())
+        binding.rv.layoutManager = LinearLayoutManager(this)
+    }
+
+    private fun getDataTulang() {
+        onResume()
+        binding.rv.adapter = ArticlesAdapter(ArticleTulang.getData())
+        binding.rv.layoutManager = LinearLayoutManager(this)
+    }
+
+    private fun getDataOtak() {
+        onResume()
+        binding.rv.adapter = ArticlesAdapter(ArticleOtak.getData())
+        binding.rv.layoutManager = LinearLayoutManager(this)
+    }
+
+
 }
