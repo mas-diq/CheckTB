@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <p align="center">
   <br>
-  <img  width="280px" src="https://github.com/mas-diq/CheckTB/blob/master/Preview.png" />
+  <img  width="1280px" src="https://github.com/mas-diq/CheckTB/blob/master/Preview.png" />
   <h3 align="center">CheckTB Apps</h3>
   <p align="justify">
     Tuberculosis, often known as TB, is caused by the bacterium called Mycobacterium tuberculosis (M. tuberculosis). It is an infectious disease. In this study, an android-based expert system was designed to diagnose Tuberculosis. Diagnosis using this system is expected to be able to detect Tuberculosis early so that treatment can be carried out faster to prevent the possibility of a worse condition occurring. In this study, the method used is the certainty factor method. This method is used to prove whether a fact is certain or uncertain in the form of metrics. The results of the consultation test obtained from this system indicate that the system can detect Tuberculosis based on the symptoms experienced by the user, which is processed using specific rules based on the existing knowledge base.
@@ -18,17 +18,17 @@
 ## Project's Prototype :star2:
 
 <p align="center">
-<img  width="220px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/SS_1.png" />
-<img  width="220px" src="https://github.com/mas-diq/CheckTB/blob/master/Screenshot_20221219_083237.png" />
-<img  width="220px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084003.png" />
-<img  width="220px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084012.png" />
-<img  width="220px" src="https://github.com/mas-diq/CheckTB/blob/master/Screenshot_20221219_084027.png" />
-<img  width="220px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084149.png" />
-<img  width="220px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084218.png" />
-<img  width="220px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084229.png" />
-<img  width="220px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084353.png" />
-<img  width="220px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084403.png" />
-<img  width="220px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084412.png" />
+<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/SS_1.png" />
+<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_083237.png" />
+<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084003.png" />
+<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084012.png" />
+<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084027.png" />
+<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084149.png" />
+<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084218.png" />
+<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084229.png" />
+<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084353.png" />
+<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084403.png" />
+<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084412.png" />
 </p>
 <br>
 
