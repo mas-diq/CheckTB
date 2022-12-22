@@ -65,6 +65,7 @@ This project was built by 3 participants from the **Business Information Systems
 ## License :page_facing_up:
 
 MIT License
+<a href="https://github.com/mas-diq/CheckTB/blob/master/LICENSE"><strong>Explore License »</strong></a>
 
 Copyright (c) 2022 Muhammad Shiddiq Fathullah
 
