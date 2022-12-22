@@ -8,7 +8,7 @@
   <p align="justify">
     Tuberculosis, often known as TB, is caused by the bacterium called Mycobacterium tuberculosis (M. tuberculosis). It is an infectious disease. In this study, an android-based expert system was designed to diagnose Tuberculosis. Diagnosis using this system is expected to be able to detect Tuberculosis early so that treatment can be carried out faster to prevent the possibility of a worse condition occurring. In this study, the method used is the certainty factor method. This method is used to prove whether a fact is certain or uncertain in the form of metrics. The results of the consultation test obtained from this system indicate that the system can detect Tuberculosis based on the symptoms experienced by the user, which is processed using specific rules based on the existing knowledge base.
     <br />
-    <a href="https://github.com/mas-diq/CrimeLessApps/tree/master"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/mas-diq/CheckTB"><strong>Explore the docs »</strong></a>
   </p>
 </p>
 <br>
@@ -18,7 +18,6 @@
 ## Project's Prototype :star2:
 
 <p align="center">
-<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/SS_1.png" />
 <img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_083237.png" />
 <img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084003.png" />
 <img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084012.png" />
@@ -56,9 +55,9 @@ These are some of the tools used to build CheckTB Apps.
 
 This project was built by 3 participants from the **Business Information Systems Master Program** from **University of Gunadarma**.
 
-* [Android Developer : 91121124 - Muhammad Shiddiq F]
-* [System Analysts : 91121115 - Aulia Puspa]
-* [System Analysts : 91121122 - Muhammad Eriko A]
+* Android Developer : 91121124 - Muhammad Shiddiq F
+* System Analysts : 91121115 - Aulia Puspa
+* System Analysts : 91121122 - Muhammad Eriko A
   <br>
 
 <!-- LICENSE -->
