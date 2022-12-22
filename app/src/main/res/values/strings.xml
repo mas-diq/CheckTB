@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">diagnoseTuberculosis</string>
+    <string name="app_name">CheckTB</string>
     <string name="tidak">Tidak</string>
     <string name="ya">Ya</string>
     <string name="bagian_1">Bagian 1</string>

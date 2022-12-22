@@ -33,7 +33,7 @@ object ArticleGenerator {
 
         // 2. Lymph Node Tuberculosis / getah bening
         val article_kelenjar_1 = Articles(
-            "DIFFICULTIES IN MANAGING LYMPH NODE TUBERCULOSIS",
+            "Difficulties In Managing Lymph Node Tuberculosis",
             "Lymph node tuberculosis constitutes 20-40% of extrapulmonary tuberculosis. It is more ...",
             "https://journals.lww.com/lungindia/Fulltext/2004/21040/DIFFICULTIES_IN_MANAGING_LYMPH_NODE_TUBERCULOSIS.4.aspx#:~:text=Tuberculous%20lymphadenitis%20usually%20presents%20as,loss%2C%20fatigue%20and%20night%20sweats.",
             "Source: journals.lww.com"

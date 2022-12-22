@@ -3,9 +3,7 @@ package com.example.diagnosetuberculosis.View.Questions
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.isEmpty
 import androidx.core.view.isNotEmpty
 import com.example.diagnosetuberculosis.databinding.ActivityPartOneBinding
 
@@ -26,36 +24,33 @@ class PartOneActivity : AppCompatActivity() {
     private fun btnNext() {
         binding.buttonNext.button.setOnClickListener() {
             val bundleData = Bundle()
-            val question_1 =
-                when (binding.question2.rbGroup.isNotEmpty()) {
-                    binding.question2.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
-                    binding.question2.TidakSetuju.isChecked -> "TidakSetuju"
-                    binding.question2.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
-                    binding.question2.CukupSetuju.isChecked -> "CukupSetuju"
-                    binding.question2.Setuju.isChecked -> "Setuju"
-                    binding.question2.SangatSetuju.isChecked -> "SangatSetuju"
-                    else -> "NULL"
-                }
-            val question_2 =
-                when (binding.question2.rbGroup.isNotEmpty()) {
-                    binding.question2.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
-                    binding.question2.TidakSetuju.isChecked -> "TidakSetuju"
-                    binding.question2.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
-                    binding.question2.CukupSetuju.isChecked -> "CukupSetuju"
-                    binding.question2.Setuju.isChecked -> "Setuju"
-                    binding.question2.SangatSetuju.isChecked -> "SangatSetuju"
-                    else -> "NULL"
-                }
-            val question_3 =
-                when (binding.question3.rbGroup.isNotEmpty()) {
-                    binding.question3.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
-                    binding.question3.TidakSetuju.isChecked -> "TidakSetuju"
-                    binding.question3.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
-                    binding.question3.CukupSetuju.isChecked -> "CukupSetuju"
-                    binding.question3.Setuju.isChecked -> "Setuju"
-                    binding.question3.SangatSetuju.isChecked -> "SangatSetuju"
-                    else -> "NULL"
-                }
+            val question_1 = when (binding.question1.rbGroup.isNotEmpty()) {
+                binding.question1.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question1.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question1.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question1.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question1.Setuju.isChecked -> "Setuju"
+                binding.question1.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_2 = when (binding.question2.rbGroup.isNotEmpty()) {
+                binding.question2.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question2.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question2.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question2.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question2.Setuju.isChecked -> "Setuju"
+                binding.question2.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
+            val question_3 = when (binding.question3.rbGroup.isNotEmpty()) {
+                binding.question3.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
+                binding.question3.TidakSetuju.isChecked -> "TidakSetuju"
+                binding.question3.CukupTidakSetuju.isChecked -> "CukupTidakSetuju"
+                binding.question3.CukupSetuju.isChecked -> "CukupSetuju"
+                binding.question3.Setuju.isChecked -> "Setuju"
+                binding.question3.SangatSetuju.isChecked -> "SangatSetuju"
+                else -> "NULL"
+            }
             val question_4 = when (binding.question4.rbGroup.isNotEmpty()) {
                 binding.question4.SangatTidakSetuju.isChecked -> "SangatTidakSetuju"
                 binding.question4.TidakSetuju.isChecked -> "TidakSetuju"

@@ -16,6 +16,13 @@
         android:theme="@style/Theme.DiagnoseTuberculosis"
         tools:targetApi="31">
         <activity
+            android:name=".View.LoadingActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".View.Articles.WebViewActivity"
             android:exported="false">
             <meta-data
@@ -72,13 +79,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".View.SplashActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".View.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -92,4 +92,5 @@
                 android:value="" />
         </activity>
     </application>
+
 </manifest>

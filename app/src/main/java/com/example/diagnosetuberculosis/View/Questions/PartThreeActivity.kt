@@ -1,11 +1,11 @@
 package com.example.diagnosetuberculosis.View.Questions
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isNotEmpty
-import com.example.diagnosetuberculosis.View.Results.ResultOneActivity
+import com.example.diagnosetuberculosis.View.LoadingActivity
 import com.example.diagnosetuberculosis.databinding.ActivityPartThreeBinding
 
 class PartThreeActivity : AppCompatActivity() {
@@ -137,7 +137,7 @@ class PartThreeActivity : AppCompatActivity() {
                 putString("question_31", question_31)
                 putString("question_32", question_32)
             }
-            val move = Intent(this, ResultOneActivity::class.java)
+            val move = Intent(this, LoadingActivity::class.java)
             if (bundleData != null) {
                 move.putExtras(bundleData)
                 Log.i("PartThree = ", bundleData.toString())
