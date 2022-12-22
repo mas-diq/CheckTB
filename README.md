@@ -18,17 +18,17 @@
 ## Project's Prototype :star2:
 
 <p align="center">
-<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/SS_1.png" />
-<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_083237.png" />
-<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084003.png" />
-<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084012.png" />
-<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084027.png" />
-<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084149.png" />
-<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084218.png" />
-<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084229.png" />
-<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084353.png" />
-<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084403.png" />
-<img  width="180px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084412.png" />
+<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/SS_1.png" />
+<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_083237.png" />
+<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084003.png" />
+<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084012.png" />
+<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084027.png" />
+<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084149.png" />
+<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084218.png" />
+<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084229.png" />
+<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084353.png" />
+<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084403.png" />
+<img  width="140px" src="https://github.com/mas-diq/CheckTB/blob/master/captures/Screenshot_20221219_084412.png" />
 </p>
 <br>
 
