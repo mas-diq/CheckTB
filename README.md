@@ -1,6 +1,6 @@
 # CheckTB
 
-<!-- PROJECT LOGO CheckTB -->
+<!-- PROJECT LOGO -->
 <p align="center">
   <br>
   <img  width="1280px" src="https://github.com/mas-diq/CheckTB/blob/master/Preview.png" />
