@@ -6,12 +6,14 @@ class CertaintyFactorViewModel : ViewModel() {
 
     private fun getUserValues(gejala: String?): Double? {
         return when (gejala != null) {
-            (gejala == "SangatTidakSetuju") -> 0.0
-            (gejala == "TidakSetuju") -> 0.2
-            (gejala == "CukupTidakSetuju") -> 0.4
-            (gejala == "CukupSetuju") -> 0.6
-            (gejala == "Setuju") -> 0.8
-            (gejala == "SangatSetuju") -> 1.0
+            (gejala == "PastiTidak") -> -1.0
+            (gejala == "HampirPastiTidak") -> -0.8
+            (gejala == "KemungkinanBesarTidak") -> -0.6
+            (gejala == "MungkinTidak") -> -0.4
+            (gejala == "Mungkin") -> 0.4
+            (gejala == "KemungkinanBesar") -> 0.6
+            (gejala == "HampirPasti") -> 0.8
+            (gejala == "Pasti") -> 1.0
             else -> null
         }
     }
@@ -39,14 +41,14 @@ class CertaintyFactorViewModel : ViewModel() {
         g4: String?
     ): Double {
         val Values = doubleArrayOf(
-            (if (g1 != "Tidak") getUserValues(g1)!! * 0.8 else 0.0),
-            (if (g2 != "Tidak") getUserValues(g2)!! * 0.6 else 0.0),
-            (if (g3 != "Tidak") getUserValues(g3)!! * 0.6 else 0.0),
-            (if (g4 != "Tidak") getUserValues(g4)!! * 0.6 else 0.0),
-            (if (g5 != "Tidak") getUserValues(g5)!! * 0.8 else 0.0),
-            (if (g6 != "Tidak") getUserValues(g6)!! * 0.8 else 0.0),
-            (if (g7 != "Tidak") getUserValues(g7)!! * 0.8 else 0.0),
-            (if (g8 != "Tidak") getUserValues(g8)!! * 0.6 else 0.0),
+            (if (g1 != "TidakTahu") getUserValues(g1)!! * 0.8 else 0.0),
+            (if (g2 != "TidakTahu") getUserValues(g2)!! * 0.6 else 0.0),
+            (if (g3 != "TidakTahu") getUserValues(g3)!! * 0.6 else 0.0),
+            (if (g4 != "TidakTahu") getUserValues(g4)!! * 0.6 else 0.0),
+            (if (g5 != "TidakTahu") getUserValues(g5)!! * 0.8 else 0.0),
+            (if (g6 != "TidakTahu") getUserValues(g6)!! * 0.8 else 0.0),
+            (if (g7 != "TidakTahu") getUserValues(g7)!! * 0.8 else 0.0),
+            (if (g8 != "TidakTahu") getUserValues(g8)!! * 0.6 else 0.0),
         )
         return calculate(Values.size, Values)
     }
@@ -67,19 +69,19 @@ class CertaintyFactorViewModel : ViewModel() {
         g15: String?
     ): Double {
         val Values = doubleArrayOf(
-            (if (g1 != "Tidak") getUserValues(g1)!! * 0.4 else 0.0),
-            (if (g3 != "Tidak") getUserValues(g3)!! * 0.4 else 0.0),
-            (if (g5 != "Tidak") getUserValues(g5)!! * 0.6 else 0.0),
-            (if (g6 != "Tidak") getUserValues(g6)!! * 0.6 else 0.0),
-            (if (g7 != "Tidak") getUserValues(g7)!! * 1.0 else 0.0),
-            (if (g8 != "Tidak") getUserValues(g8)!! * -0.4 else 0.0),
-            (if (g9 != "Tidak") getUserValues(g9)!! * 1.0 else 0.0),
-            (if (g10 != "Tidak") getUserValues(g10)!! * 0.8 else 0.0),
-            (if (g11 != "Tidak") getUserValues(g11)!! * 0.8 else 0.0),
-            (if (g12 != "Tidak") getUserValues(g12)!! * 0.8 else 0.0),
-            (if (g13 != "Tidak") getUserValues(g13)!! * 1.0 else 0.0),
-            (if (g14 != "Tidak") getUserValues(g14)!! * 0.8 else 0.0),
-            (if (g15 != "Tidak") getUserValues(g15)!! * 1.0 else 0.0),
+            (if (g1 != "TidakTahu") getUserValues(g1)!! * 0.4 else 0.0),
+            (if (g3 != "TidakTahu") getUserValues(g3)!! * 0.4 else 0.0),
+            (if (g5 != "TidakTahu") getUserValues(g5)!! * 0.6 else 0.0),
+            (if (g6 != "TidakTahu") getUserValues(g6)!! * 0.6 else 0.0),
+            (if (g7 != "TidakTahu") getUserValues(g7)!! * 1.0 else 0.0),
+            (if (g8 != "TidakTahu") getUserValues(g8)!! * -0.4 else 0.0),
+            (if (g9 != "TidakTahu") getUserValues(g9)!! * 1.0 else 0.0),
+            (if (g10 != "TidakTahu") getUserValues(g10)!! * 0.8 else 0.0),
+            (if (g11 != "TidakTahu") getUserValues(g11)!! * 0.8 else 0.0),
+            (if (g12 != "TidakTahu") getUserValues(g12)!! * 0.8 else 0.0),
+            (if (g13 != "TidakTahu") getUserValues(g13)!! * 1.0 else 0.0),
+            (if (g14 != "TidakTahu") getUserValues(g14)!! * 0.8 else 0.0),
+            (if (g15 != "TidakTahu") getUserValues(g15)!! * 1.0 else 0.0),
         )
         return calculate(Values.size, Values)
     }
@@ -96,15 +98,15 @@ class CertaintyFactorViewModel : ViewModel() {
         g18: String?
     ): Double {
         val Values = doubleArrayOf(
-            (if (g1 != "Tidak") getUserValues(g1)!! * 0.4 else 0.0),
-            (if (g3 != "Tidak") getUserValues(g3)!! * 0.6 else 0.0),
-            (if (g5 != "Tidak") getUserValues(g5)!! * 0.4 else 0.0),
-            (if (g6 != "Tidak") getUserValues(g6)!! * 0.4 else 0.0),
-            (if (g7 != "Tidak") getUserValues(g7)!! * 1.0 else 0.0),
-            (if (g8 != "Tidak") getUserValues(g8)!! * -0.4 else 0.0),
-            (if (g16 != "Tidak") getUserValues(g16)!! * 1.0 else 0.0),
-            (if (g17 != "Tidak") getUserValues(g17)!! * 0.8 else 0.0),
-            (if (g18 != "Tidak") getUserValues(g18)!! * 0.8 else 0.0)
+            (if (g1 != "TidakTahu") getUserValues(g1)!! * 0.4 else 0.0),
+            (if (g3 != "TidakTahu") getUserValues(g3)!! * 0.6 else 0.0),
+            (if (g5 != "TidakTahu") getUserValues(g5)!! * 0.4 else 0.0),
+            (if (g6 != "TidakTahu") getUserValues(g6)!! * 0.4 else 0.0),
+            (if (g7 != "TidakTahu") getUserValues(g7)!! * 1.0 else 0.0),
+            (if (g8 != "TidakTahu") getUserValues(g8)!! * -0.4 else 0.0),
+            (if (g16 != "TidakTahu") getUserValues(g16)!! * 1.0 else 0.0),
+            (if (g17 != "TidakTahu") getUserValues(g17)!! * 0.8 else 0.0),
+            (if (g18 != "TidakTahu") getUserValues(g18)!! * 0.8 else 0.0)
         )
         return calculate(Values.size, Values)
 
@@ -124,17 +126,17 @@ class CertaintyFactorViewModel : ViewModel() {
         g23: String?
     ): Double {
         val Values = doubleArrayOf(
-            (if (g1 != "Tidak") getUserValues(g1)!! * -0.6 else 0.0),
-            (if (g3 != "Tidak") getUserValues(g3)!! * -0.4 else 0.0),
-            (if (g5 != "Tidak") getUserValues(g5)!! * 0.6 else 0.0),
-            (if (g6 != "Tidak") getUserValues(g6)!! * 0.8 else 0.0),
-            (if (g7 != "Tidak") getUserValues(g7)!! * 1.0 else 0.0),
-            (if (g8 != "Tidak") getUserValues(g8)!! * 0.4 else 0.0),
-            (if (g19 != "Tidak") getUserValues(g19)!! * 1.0 else 0.0),
-            (if (g20 != "Tidak") getUserValues(g20)!! * 1.0 else 0.0),
-            (if (g21 != "Tidak") getUserValues(g21)!! * 1.0 else 0.0),
-            (if (g22 != "Tidak") getUserValues(g22)!! * 1.0 else 0.0),
-            (if (g23 != "Tidak") getUserValues(g23)!! * 0.6 else 0.0),
+            (if (g1 != "TidakTahu") getUserValues(g1)!! * -0.6 else 0.0),
+            (if (g3 != "TidakTahu") getUserValues(g3)!! * -0.4 else 0.0),
+            (if (g5 != "TidakTahu") getUserValues(g5)!! * 0.6 else 0.0),
+            (if (g6 != "TidakTahu") getUserValues(g6)!! * 0.8 else 0.0),
+            (if (g7 != "TidakTahu") getUserValues(g7)!! * 1.0 else 0.0),
+            (if (g8 != "TidakTahu") getUserValues(g8)!! * 0.4 else 0.0),
+            (if (g19 != "TidakTahu") getUserValues(g19)!! * 1.0 else 0.0),
+            (if (g20 != "TidakTahu") getUserValues(g20)!! * 1.0 else 0.0),
+            (if (g21 != "TidakTahu") getUserValues(g21)!! * 1.0 else 0.0),
+            (if (g22 != "TidakTahu") getUserValues(g22)!! * 1.0 else 0.0),
+            (if (g23 != "TidakTahu") getUserValues(g23)!! * 0.6 else 0.0),
         )
         return calculate(Values.size, Values)
 
@@ -158,21 +160,21 @@ class CertaintyFactorViewModel : ViewModel() {
         g32: String?
     ): Double {
         val Values = doubleArrayOf(
-            (if (g1 != "Tidak") getUserValues(g1)!! * -0.4 else 0.0),
-            (if (g3 != "Tidak") getUserValues(g3)!! * 0.4 else 0.0),
-            (if (g5 != "Tidak") getUserValues(g5)!! * 0.4 else 0.0),
-            (if (g6 != "Tidak") getUserValues(g6)!! * 0.8 else 0.0),
-            (if (g7 != "Tidak") getUserValues(g7)!! * 0.4 else 0.0),
-            (if (g8 != "Tidak") getUserValues(g8)!! * 0.2 else 0.0),
-            (if (g24 != "Tidak") getUserValues(g24)!! * 1.0 else 0.0),
-            (if (g25 != "Tidak") getUserValues(g25)!! * 0.8 else 0.0),
-            (if (g26 != "Tidak") getUserValues(g26)!! * 0.8 else 0.0),
-            (if (g27 != "Tidak") getUserValues(g27)!! * 0.6 else 0.0),
-            (if (g28 != "Tidak") getUserValues(g28)!! * 0.6 else 0.0),
-            (if (g29 != "Tidak") getUserValues(g29)!! * 1.0 else 0.0),
-            (if (g30 != "Tidak") getUserValues(g30)!! * 0.8 else 0.0),
-            (if (g31 != "Tidak") getUserValues(g31)!! * 0.6 else 0.0),
-            (if (g32 != "Tidak") getUserValues(g32)!! * 0.8 else 0.0)
+            (if (g1 != "TidakTahu") getUserValues(g1)!! * -0.4 else 0.0),
+            (if (g3 != "TidakTahu") getUserValues(g3)!! * 0.4 else 0.0),
+            (if (g5 != "TidakTahu") getUserValues(g5)!! * 0.4 else 0.0),
+            (if (g6 != "TidakTahu") getUserValues(g6)!! * 0.8 else 0.0),
+            (if (g7 != "TidakTahu") getUserValues(g7)!! * 0.4 else 0.0),
+            (if (g8 != "TidakTahu") getUserValues(g8)!! * 0.2 else 0.0),
+            (if (g24 != "TidakTahu") getUserValues(g24)!! * 1.0 else 0.0),
+            (if (g25 != "TidakTahu") getUserValues(g25)!! * 0.8 else 0.0),
+            (if (g26 != "TidakTahu") getUserValues(g26)!! * 0.8 else 0.0),
+            (if (g27 != "TidakTahu") getUserValues(g27)!! * 0.6 else 0.0),
+            (if (g28 != "TidakTahu") getUserValues(g28)!! * 0.6 else 0.0),
+            (if (g29 != "TidakTahu") getUserValues(g29)!! * 1.0 else 0.0),
+            (if (g30 != "TidakTahu") getUserValues(g30)!! * 0.8 else 0.0),
+            (if (g31 != "TidakTahu") getUserValues(g31)!! * 0.6 else 0.0),
+            (if (g32 != "TidakTahu") getUserValues(g32)!! * 0.8 else 0.0)
         )
         return calculate(Values.size, Values)
 
