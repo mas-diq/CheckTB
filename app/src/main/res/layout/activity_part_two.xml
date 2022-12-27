@@ -42,7 +42,7 @@
             android:layout_marginHorizontal="16dp"
             android:fontFamily="@font/montserrat_medium"
             android:justificationMode="inter_word"
-            android:text="Bagian ini berisi 11 pertanyaan yang perlu diisi, pilih jawaban antara rentang 1-9. Pilih 1 jika pasti tidak (Definitely not) dan pilih 9 jika pasti (Definitely)."
+            android:text="Bagian ini berisi 11 pertanyaan yang perlu diisi, pilih 1 jika sangat tidak setuju (Tidak) dan pilih 6 sangat setuju (Ya)."
             android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

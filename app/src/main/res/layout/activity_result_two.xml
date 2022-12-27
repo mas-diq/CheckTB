@@ -98,7 +98,7 @@
             android:text="*Segera melakukan pemeriksaan lebih lanjut pada fasilitas kesehatan terdekat."
             android:textAlignment="center"
             android:textColor="@color/dark_grey"
-            android:textSize="12sp"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/tvMain2"
             app:layout_constraintStart_toStartOf="@+id/tvMain2"
             app:layout_constraintTop_toBottomOf="@+id/tvValue" />

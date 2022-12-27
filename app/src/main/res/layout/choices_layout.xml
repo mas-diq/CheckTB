@@ -48,18 +48,41 @@
                 app:layout_constraintTop_toBottomOf="@id/textNomor"
                 tools:targetApi="o" />
 
+            <TextView
+                android:id="@+id/textTidak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Tidak"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/rbGroup"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPertanyaan" />
+
+            <TextView
+                android:id="@+id/textYakin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:fontFamily="@font/montserrat_medium"
+                android:text="Ya"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/rbGroup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textPertanyaan" />
+
             <RadioGroup
                 android:id="@+id/rbGroup"
                 android:layout_width="wrap_content"
-                android:paddingHorizontal="8dp"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/textYakin"
+                app:layout_constraintStart_toEndOf="@+id/textTidak"
                 app:layout_constraintTop_toBottomOf="@+id/textPertanyaan">
 
                 <RadioButton
-                    android:id="@+id/PastiTidak"
+                    android:id="@+id/SangatTidakSetuju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -72,7 +95,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <RadioButton
-                    android:id="@+id/HampirPastiTidak"
+                    android:id="@+id/TidakSetuju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -85,7 +108,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <RadioButton
-                    android:id="@+id/KemungkinanBesarTidak"
+                    android:id="@+id/CukupTidakSetuju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -98,7 +121,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <RadioButton
-                    android:id="@+id/MungkinTidak"
+                    android:id="@+id/CukupSetuju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -111,7 +134,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <RadioButton
-                    android:id="@+id/TidakTahu"
+                    android:id="@+id/Setuju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -124,7 +147,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <RadioButton
-                    android:id="@+id/Mungkin"
+                    android:id="@+id/SangatSetuju"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -134,49 +157,7 @@
                     android:textSize="12sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/PastiTidak"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <RadioButton
-                    android:id="@+id/KemungkinanBesar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="7"
-                    android:textColor="@color/dark_grey"
-                    android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/Mungkin"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <RadioButton
-                    android:id="@+id/HampirPasti"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="8"
-                    android:textColor="@color/dark_grey"
-                    android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/KemungkinanBesar"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <RadioButton
-                    android:id="@+id/Pasti"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/montserrat_regular"
-                    android:text="9"
-                    android:textColor="@color/dark_grey"
-                    android:textSize="12sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/HampirPasti"
+                    app:layout_constraintStart_toEndOf="@+id/SangatTidakSetuju"
                     app:layout_constraintTop_toTopOf="parent" />
 
             </RadioGroup>

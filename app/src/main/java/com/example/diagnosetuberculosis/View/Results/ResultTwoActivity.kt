@@ -44,33 +44,23 @@ class ResultTwoActivity : AppCompatActivity() {
                 if (tbParu > tbKelenjar && tbParu > tbPayudara && tbParu > tbTulang && tbParu > tbOtak) {
                     binding.tvPersentages.text = "$tbParu%"
                     binding.tvValue.text = "Tuberkulosis Paru-Paru"
-                    binding.tvSecondary2.text =
-                        "Lakukan Pemeriksaan tes dahak, pemeriksaan darah, pemeriksaan radiologi (CT-scan atau foto toraks) dan pemeriksaan lanjutan ketika dokter sudah berada ditempat, mohon ikuti petunjuk dokter untuk penanganan medis dan pengobatan yang tepat."
                     getDataParu()
                 } else if (tbKelenjar > tbPayudara && tbKelenjar > tbTulang && tbKelenjar > tbOtak) {
                     binding.tvPersentages.text = "$tbKelenjar%"
                     binding.tvValue.text = "Tuberkulosis Kelenjar Getah Bening"
                     binding.tvValue.setLines(2)
-                    binding.tvSecondary2.text =
-                        "Lakukakn pemeriksaan tes mammografi, pemeriksaan darah, CT-Scan, MRI, pemeriksaan lanjutan akan dilakukan ketika dokter sudah berada ditempat, mohon ikuti petunjuk dokter untuk penanganan medis dan pengobatan yang tepat."
                     getDataKelenjar()
                 } else if (tbPayudara > tbTulang && tbPayudara > tbOtak) {
                     binding.tvPersentages.text = "$tbPayudara%"
                     binding.tvValue.text = "Tuberkulosis Payudara"
-                    binding.tvSecondary2.text =
-                        "Lakukan pemeriksaan CT-Scan pada daerah yang timbul benjolan, tes darah, lakukan pemeriksaan dan penanganan lanjutan ketika dokter sudah berada ditempat, mohon ikuti petunjuk dokter untuk penanganan medis dan pengobatan yang tepat."
                     getDataPayudara()
                 } else if (tbTulang > tbOtak) {
                     binding.tvPersentages.text = "$tbTulang%"
                     binding.tvValue.text = "Tuberkulosis Tulang Belakang"
-                    binding.tvSecondary2.text =
-                        "Lakukan pemeriksaan radiologi, seperti sinar-x, CT-Scan, dan MRI, pemeriksaan lanjutan akan dilakukan ketika dokter sudah berada ditempat, mohon ikuti petunjuk dokter untuk penanganan medis dan pengobatan yang tepat."
                     getDataTulang()
                 } else {
                     binding.tvPersentages.text = "$tbOtak%"
                     binding.tvValue.text = "Tuberkulosis Otak"
-                    binding.tvSecondary2.text =
-                        "Lakukan pemeriksaan tes lumbal (spinal tap), biopsi otak, CT-Scan kepala, rontgen, pemerikasaan jumlah sel, glukosa dan rotein, pemeriksaan lanjutan akan dilakukan ketika dokter sudah berada ditempat, mohon ikuti petunjuk dokter untuk penanganan medis dan pengobatan yang tepat."
                     getDataOtak()
                 }
 
