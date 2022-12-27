@@ -51,8 +51,6 @@ class ResultTwoActivity : AppCompatActivity() {
                     binding.tvPersentages.text = "$tbKelenjar%"
                     binding.tvValue.text = "Tuberkulosis Kelenjar Getah Bening"
                     binding.tvValue.setLines(2)
-                    binding.tvSecondary2.text =
-                        "Lakukakn pemeriksaan tes mammografi, pemeriksaan darah, CT-Scan, MRI, pemeriksaan lanjutan akan dilakukan ketika dokter sudah berada ditempat, mohon ikuti petunjuk dokter untuk penanganan medis dan pengobatan yang tepat."
                     getDataKelenjar()
                 } else if (tbPayudara > tbTulang && tbPayudara > tbOtak) {
                     binding.tvPersentages.text = "$tbPayudara%"
